@@ -19,9 +19,9 @@ with col1:
 	member_depth = st.number_input("Member Depth (inches)", min_value=0.0, step=0.1, value=6.0)
 	flange_width = st.selectbox("Flange Width (inches)", sorted(flange_df['Flange Width'].unique()))
 	gauge = st.selectbox("Gauge (ga)", sorted(gauge_df['Gauge'].unique()))
-	outside_diameter = st.number_input("Outside Diameter (inches)", min_value=0.0, step=1.0, value=50)
+	outside_diameter = st.number_input("Outside Diameter (inches)", min_value=0.0, step=1.0, value=50.0)
 	st.markdown("Inside Diameter: 20.0 inches (fixed)")
-	cwt_price = st.number_input("CWT Price (USD)", min_value=0.0, step=0.01, value=50)
+	cwt_price = st.number_input("CWT Price (USD)", min_value=0.0, step=0.01, value=50.00)
 
 # --- Lookups ---
 # Lip Length
