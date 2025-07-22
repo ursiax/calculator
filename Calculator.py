@@ -38,7 +38,7 @@ if shape == "C Stud/C Joist":
 else:
     coil_width = member_depth + 2 * flange_width - 4 * thickness
 
-material_length = math.pi * ((outside_diameter ** 2 - inside_diameter ** 2)) / 48 / thickness  # feet
+material_length = math.pi * ((outside_diameter ** 2 - 20 ** 2)) / 48 / thickness  # feet
 
 area = material_length * thickness / 12  # sq feet
 
