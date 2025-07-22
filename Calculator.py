@@ -42,7 +42,7 @@ material_length = math.pi * ((outside_diameter ** 2 - 20 ** 2)) / 48 / thickness
 
 area = material_length * thickness / 12  # sq feet
 
-piw = 467.26 / (50 ** 2 - 20 ** 2) * (outside_diameter ** 2 - inside_diameter ** 2)  # lbs
+piw = 467.26 / (50 ** 2 - 20 ** 2) * (outside_diameter ** 2 - 20 ** 2)  # lbs
 
 weight = piw * coil_width  # lbs
 
